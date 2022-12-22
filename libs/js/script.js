@@ -59,11 +59,11 @@ $(document).ready(function(){
       },
       success: function(result) {
           console.log(result);
-        $('#stationname').html(result['data'][0]['stationName']);
-        $('#temperature').html(result['data'][0]['temperature']);
-        $('#humidity').html(result['data'][0]['humidity']);
-        $('#clouds').html(result['data'][0]['clouds']);
-        $('#weathercondition').html(result['data'][0]['weatherCondition']);
+        $('#speed').html(result['data'][0]['windSpeed']);
+        $('#observe').html(result['data'][0]['observation']);
+        $('#direction').html(result['data'][0]['windDirection']);
+        $('#cloud').html(result['data'][0]['clouds']);
+        $('#condition').html(result['data'][0]['weatherCondition']);
       },
       error: function (err) {
         console.log(err);

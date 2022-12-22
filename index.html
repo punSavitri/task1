@@ -9,7 +9,7 @@
 <body>
   <div>
     <div>
-      <h1>Weather Observation API</h1>
+      <h1>Near By Weather Observation API</h1>
         <h2>Returns a Weather Station with the most recent weather observation.</h2>
           <p>
             <input type="number" name= "lat" id="lat" placeholder="Latitude">
@@ -49,7 +49,7 @@
           <button id="earthquakesBtn">Submit</button>
         </p>
     </div>   
-    <div id="results">
+    <div>
       <table>
         <tr>        
           <td>DateTime:</td>
@@ -84,27 +84,27 @@
           <button id="weatherBtn">Submit</button>
         </p>
     </div>   
-    <div id="results">
+    <div id="output">
       <table>
         <tr>        
-          <td>Station Name:</td>
-          <td id="stationname"></td>
+          <td>Wind Speed:</td>
+          <td id="speed"></td>
         </tr>
         <tr>
-          <td>Temperature:</td>
-          <td id="temperature"></td>
+          <td>Observation:</td>
+          <td id="observe"></td>
         </tr>
         <tr>
-          <td>Humidity:</td>
-          <td id="humidity"></td>
+          <td>Wind Direction:</td>
+          <td id="direction"></td>
         </tr>
         <tr>
           <td>Clouds:</td>
-          <td id="clouds"></td>
+          <td id="cloud"></td>
         </tr>
         <tr>
           <td>Weather Condition:</td>
-          <td id="weathercondition"></td>
+          <td id="condition"></td>
         </tr>
     </table>
     </div>
