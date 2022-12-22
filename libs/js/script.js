@@ -28,10 +28,10 @@ $(document).ready(function(){
       type:'POST',
       dataType:'json',
       data: {
-        north: $('#earthnorth').val(),
-        south: $('#earthsouth').val(),
-        east: $('#eartheast').val(),
-        west: $('#earthwest').val(),
+        north:$('#earthnorth').val(),
+        south:$('#earthsouth').val(),
+        east:$('#eartheast').val(),
+        west:$('#earthwest').val(),
       },
       success: function(result) {
           console.log(result);
@@ -52,10 +52,10 @@ $(document).ready(function(){
       type:'POST',
       dataType:'json',
       data: {
-        north: $('#north').val(),
-        south: $('#south').val(),
-        east: $('#east').val(),
-        west: $('#west').val(),
+        north:$('#north').val(),
+        south:$('#south').val(),
+        east:$('#east').val(),
+        west:$('#west').val(),
       },
       success: function(result) {
           console.log(result);

@@ -4,7 +4,9 @@ ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 
 $executionStartTime = microtime(true);
-$url = 'http://api.geonames.org/earthquakesJSON?formatted=true&north=' . $_REQUEST['north'] . '&south=' . $_REQUEST['south'] . '&east=' . $_REQUEST['east'] . '&west= ' . $_REQUEST['west'] . '&username=savitri_pun2022&style=full';
+
+$url= 'http://api.geonames.org/earthquakesJSON?formatted=true&north=' . $_REQUEST['north'] . '&south=' . $_REQUEST['south'] . '&east=' . $_REQUEST['east'] . '&west=' . $_REQUEST['west'] . '&username=savitri_pun2022&style=full';
+
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
