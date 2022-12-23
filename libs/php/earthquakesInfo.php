@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 $executionStartTime = microtime(true);
 
-$url= 'http://api.geonames.org/earthquakesJSON?formatted=true&north=' . $_REQUEST['north'] . '&south=' . $_REQUEST['south'] . '&east=' . $_REQUEST['east'] . '&west=' . $_REQUEST['west'] . '&username=savitri_pun2022&style=full';
+$url = 'http://api.geonames.org/earthquakesJSON?formatted=true&north=' . $_REQUEST['north'] . '&south=' . $_REQUEST['south'] . '&east=' . $_REQUEST['east'] . '&west=' . $_REQUEST['west'] . '&username=savitri_pun2022&style=full';
 
 
 $ch = curl_init();
@@ -18,7 +18,6 @@ $result = curl_exec($ch);
 curl_close($ch);
 
 $decode = json_decode($result, true);
-print_r($decode);
 
 $output['status']['code'] = "200";
 $output['status']['name'] = "ok";

@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 $executionStartTime = microtime(true);
 
-$url = 'http://api.geonames.org/findNearByWeatherJSON?formatted=true&lat=' . $_REQUEST['lat'] . '&lng=' . $_REQUEST['lng'] . '&username=savitri_pun2022&style=full';
+$url = 'http://api.geonames.org/findNearByWeatherJSON?formatted=true&lat=' . $_REQUEST['lat'] .'&lng='. $_REQUEST['lng'] .'&username=savitri_pun2022&style=full';
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
